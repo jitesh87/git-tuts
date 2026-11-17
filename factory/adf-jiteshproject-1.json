@@ -1,0 +1,15 @@
+{
+	"name": "adf-jiteshproject-1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4fd28215-4a05-447e-a059-bc4319d2e923",
+		"tenantId": "d97fc40b-b836-4479-aae7-1e9843bafc81"
+	}
+}
