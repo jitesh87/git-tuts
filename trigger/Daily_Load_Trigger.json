@@ -1,0 +1,32 @@
+{
+	"name": "Daily_Load_Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "p_adls_to_adls_bronze",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"folderDate": "@convertFromUtc(trigger().scheduledTime,'India Standard Time','yyyyMMdd')"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-11-24T10:00:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"hours": [
+						10
+					]
+				}
+			}
+		}
+	}
+}
