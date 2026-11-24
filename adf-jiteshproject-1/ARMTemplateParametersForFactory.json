@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-jiteshproject-1"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://storageaccountproject1.dfs.core.windows.net/"
+		},
+		"ls_AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://project1kv.vault.azure.net/"
+		},
+		"ls_PostgreSql1_properties_typeProperties_server": {
+			"value": "ep-ancient-dust-b37la82g-pooler.c-4.ap-southeast-1.aws.neon.tech"
+		},
+		"ls_PostgreSql1_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"ls_PostgreSql1_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		},
+		"Daily_Load_Trigger_properties_p_adls_to_adls_bronze_parameters_folderDate": {
+			"value": "@convertFromUtc(trigger().scheduledTime,'India Standard Time','yyyyMMdd')"
+		}
+	}
+}
