@@ -466,11 +466,11 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2026-11-24T17:20:00",
+						"startTime": "2026-11-24T17:30:00",
 						"timeZone": "India Standard Time",
 						"schedule": {
 							"minutes": [
-								20
+								40
 							],
 							"hours": [
 								17
