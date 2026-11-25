@@ -280,7 +280,7 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"folderPath": {
-							"value": "@concat('daily_loads/',dataset().folderDate)",
+							"value": "@concat('local_daily/',dataset().folderDate)",
 							"type": "Expression"
 						},
 						"fileSystem": "landing"
